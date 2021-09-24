@@ -40,7 +40,7 @@ npm run build
 ![IMG7](screenshots/007.png)
 - 画面右下にはヘルプ表示ボタン、対象楽曲変更用プルダウンメニュー、元PV表示窓、楽曲情報が表示されています。  
   対象楽曲はプルダウンメニューから選択して頂くことでいつでも変更可能です。  
-  参照元がyoutubeの場合灰色部に元PVが再生されます。
+  参照元がyoutubeの場合灰色部に元PVが再生されます。  
 ![IMG8](screenshots/008.png)
 ## 作成例
 ![IMG9](screenshots/009.png)
