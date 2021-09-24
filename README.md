@@ -53,9 +53,10 @@ npm run build
 - [濁茶 / 密かなる交信曲]
 
 # 開発メンバ
-	プログラム: upc1712goto  
-  画像素材: Milch @Milch_puyo
-
+```sh
+プログラム: upc1712goto
+画像素材: Milch @Milch_puyo
+```
 ## TextAlive App API
 
 ![TextAlive](https://i.gyazo.com/thumb/1000/5301e6f642d255c5cfff98e049b6d1f3-png.png)
