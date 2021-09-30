@@ -1,20 +1,14 @@
 /**
+ * API チュートリアル「1. 開発の始め方」のサンプルコードを参考にしています。
  * TextAlive App API basic example
  * https://github.com/TextAliveJp/textalive-app-basic
- *
- * API チュートリアル「1. 開発の始め方」のサンプルコードです。
- * 発声中の歌詞を単語単位で表示します。
- * また、このアプリが TextAlive ホストと接続されていなければ再生コントロールを表示します。
  * https://developer.textalive.jp/app/
  */
 
 import { Player, stringToDataUrl } from "textalive-app-api";
 
-// 単語が発声されていたら #text に表示する
-// Show words being vocalized in #text
-// シークバーで飛んできた時の処理が甘いよ！
 let lyricsorder = -1;
-let changeflag = true; /* lyricsorder爆絶増え次郎 */
+let changeflag = true; 
 let seekbarflag = false;
 let deleteflag = true;
 
@@ -73,7 +67,6 @@ const animateWord = function (now, unit) {
                 changeflag = true;
                 deleteflag = true;
                 var new_word = document.createElement("div");
-                //console.log(strSelect.value)
                 if(strSelect.value == "popup"){
                   new_word.style.animation = "popup 1.5s forwards";
                 }else if(strSelect.value == "kurukuru"){
@@ -326,20 +319,6 @@ function onTimeUpdate(position) {
   if (!player.video.firstChar) {
     return;
   }
-  // 巻き戻っていたら歌詞表示をリセットする
-  //if (c && c.startTime > position + 1000) {
-  //  resetChars();
-  //}
-  // 500ms先に発声される文字を取得
-  //let current = c || player.video.firstChar;
-  //while (current && current.startTime < position + 500) {
-  //  // 新しい文字が発声されようとしている
-  //  if (c !== current) {
-  //    newChar(current);
-  //    c = current;
-  //  }
-  //  current = current.next;
-  //}
 }
 
 /**
